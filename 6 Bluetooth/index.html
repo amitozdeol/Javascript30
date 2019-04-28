@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    button {
+        padding: 20px 30px;
+        background: #999;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <button onclick="connect()">
+        Connect to Device
+    </button>
+    <script>
+        function connect() {
+            if (navigator.bluetooth) {
+                console.log('Requesting Bluetooth device...');
+
+                navigator.bluetooth.requestDevice({
+                    "acceptAllDevices": true
+                }).
+
+                then(device => {
+                    console.log('> Name:      ' + device.name);
+                    console.log('> Id:        ' + device.id);
+                    console.log('> Connected: ' + device.gatt.connected);
+                }).
+                catch(error => {
+                    console.log("D'oh! " + error);
+                });
+            } else {
+                console.log('No Bluetooth for you!');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "javascript30",
+  "version": "1.0.0",
+  "description": "Javascript 30 exercises. https://courses.wesbos.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amitozdeol@gmail.com",
+  "license": "ISC"
+}

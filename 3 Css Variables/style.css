@@ -1,0 +1,42 @@
+body {
+  background: #a73737; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7a2828,
+    #a73737
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7a2828,
+    #a73737
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+:root {
+  --color: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+h1 span {
+  color: var(--color);
+}
+.text-center {
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.property {
+  padding: 1rem;
+}
+.image {
+  width: 100%;
+}
+img {
+  border: var(--spacing) solid var(--color);
+  margin: 0 auto;
+  filter: blur(var(--blur));
+}

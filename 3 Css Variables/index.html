@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS variable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Update CSS Variables with <span>JS</span></h1>
+    <div class="content text-center">
+      <div class="property">
+        <h3>Spacing</h3>
+        <input
+          type="range"
+          name="spacing"
+          id="spacing"
+          min="0"
+          max="100"
+          value="10"
+          data-value="px"
+        />
+      </div>
+      <div class="property">
+        <h3>Blur</h3>
+        <input
+          type="range"
+          name="blur"
+          id="blur"
+          min="0"
+          max="100"
+          value="10"
+          data-value="px"
+        />
+      </div>
+      <div class="property">
+        <h3>Base Color</h3>
+        <input type="color" name="color" id="color" value="#ffc600" />
+      </div>
+    </div>
+    <div class="image text-center">
+      <img
+        src="https://source.unsplash.com/random/800x600"
+        alt="Random image"
+      />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
